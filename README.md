@@ -45,8 +45,10 @@ Documentation & Testing
 
 # System Architecture
 High-Level Architecture
+
 flowchart LR
-    Client -->|HTTP/JSON| API[Django API]
+
+     Client -->|HTTP/JSON| API[Django API]
     API --> DB[(PostgreSQL)]
     API --> Cache[(Redis)]
     API -->|Async Tasks| Celery[Celery Worker]
@@ -124,16 +126,24 @@ GET /swagger/
 Publicly accessible API documentation.
 
 #Challenges & Solutions
-Challenge	                Solution
+Challenge	                    Solution
 1.Slow API responses	        Redis caching
+
 2.Long-running tasks	        Celery background workers
-3.Production config issues	Environment variables
+
+3.Production config issues	    Environment variables
+
 4.API clarity	                Swagger documentation
 
 # Best Practices & Takeaways
 1.Cache aggressively but invalidate correctly
+
 2.Use async tasks for heavy operations
+
 3.Document APIs early
+
 4.Separate concerns (views, services, tasks)
+
 5.Secure endpoints with rate limiting
+
 6.Collaborate early with frontend teams
