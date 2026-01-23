@@ -32,11 +32,17 @@ Documentation & Testing
 
 # Backend Concepts Learned
 1.Database design & migrations
+
 2.REST & GraphQL API design
+
 3.Caching strategies (Redis)
+
 4.Asynchronous processing
+
 5.Rate limiting & IP security
+
 6.Production deployment best practices
+
 
 🏗️ System Architecture
 High-Level Architecture
