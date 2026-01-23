@@ -10,23 +10,23 @@ This repository serves as:
 *A collaboration bridge with frontend engineers
 
 # Technologies Covered
-*Core Stack
+* Core Stack
 *  Python
 *  Django & Django REST Framework
 *  GraphQL
 *  PostgreSQL
 *  Redis
 
-*Async & Background Tasks
+* Async & Background Tasks
 *  Celery
 *  RabbitMQ / Redis Broker
 
-*DevOps & Deployment
+* DevOps & Deployment
 *  Docker & Docker Compose
 *  CI/CD
 *  Cloud Deployment (Render, PythonAnywhere)
 
-*Documentation & Testing
+* Documentation & Testing
 *  Swagger / OpenAPI
 *  Unit & Integration Testing
 
