@@ -43,8 +43,7 @@ Documentation & Testing
 
 6.Production deployment best practices
 
-
-🏗️ System Architecture
+# System Architecture
 High-Level Architecture
 flowchart LR
     Client -->|HTTP/JSON| API[Django API]
@@ -72,7 +71,7 @@ sequenceDiagram
     end
     Django-->>Client: JSON response
 
-🔗 Example API Endpoints
+# Example API Endpoints
 Authentication
 POST /api/auth/login/
 
@@ -124,14 +123,14 @@ GET /swagger/
 
 Publicly accessible API documentation.
 
-⚠️ Challenges & Solutions
+#Challenges & Solutions
 Challenge	                Solution
 1.Slow API responses	        Redis caching
 2.Long-running tasks	        Celery background workers
 3.Production config issues	Environment variables
 4.API clarity	                Swagger documentation
 
-✅ Best Practices & Takeaways
+# Best Practices & Takeaways
 1.Cache aggressively but invalidate correctly
 2.Use async tasks for heavy operations
 3.Document APIs early
