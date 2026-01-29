@@ -1,5 +1,5 @@
-## E-Commerce Backend (ALX)
-# Overview
+# E-Commerce Backend (ALX)
+## Overview
 
 This project is a production-ready e-commerce backend built with Django and Django REST Framework.
 It simulates a real-world backend system focused on scalability, security, performance, and clean API design.
@@ -16,7 +16,7 @@ Optimized PostgreSQL database schema
 
 Public API documentation via Swagger/OpenAPI
 
-# Project Objectives
+## Project Objectives
 
 Design and optimize a relational database schema
 
@@ -28,7 +28,7 @@ Provide clear, testable API documentation
 
 Follow ALX backend engineering standards
 
-# Technologies Used
+## Technologies Used
 Technology	Purpose
 Python	Core programming language
 Django	Backend framework
@@ -43,7 +43,7 @@ flowchart LR
     DjangoAPI --> DB[(PostgreSQL)]
     DjangoAPI --> Docs[Swagger UI]
 
-# Database Schema (Overview)
+## Database Schema (Overview)
 erDiagram
     CATEGORY ||--o{ PRODUCT : contains
     CATEGORY {
@@ -65,7 +65,7 @@ Indexed fields: Product.name, Product.price
 
 Foreign key relationships for efficient joins
 
-# Key Features
+## Key Features
 1. Authentication
 
 JWT-based login and registration
@@ -92,7 +92,7 @@ Interactive Swagger UI
 
 Publicly accessible
 
-# API Endpoints (Examples)
+## API Endpoints (Examples)
 Authentication
 POST /api/auth/register/
 POST /api/auth/token/
@@ -120,7 +120,7 @@ Example:
 
 http://localhost:8000/swagger/
 
-# Setup Instructions
+## Setup Instructions
 1. Clone the Repository
 git clone <repository-url>
 cd alx-ecommerce-backend
@@ -142,7 +142,7 @@ python manage.py migrate
 5. Start the Server
 python manage.py runserver
 
-# Testing
+## Testing
 
 Run all tests:
 
@@ -161,7 +161,7 @@ Authentication
 
 Swagger accessibility
 
-# Performance Considerations
+## Performance Considerations
 
 Database indexing for frequent queries
 
@@ -169,7 +169,7 @@ Pagination to limit payload size
 
 Optimized queryset filtering
 
-# Deployment Notes
+## Deployment Notes
 
 Set DEBUG=False in production
 
@@ -179,7 +179,7 @@ Configure environment variables on the hosting platform
 
 Ensure /swagger/ remains publicly accessible
 
-#Key Takeaways
+## Key Takeaways
 
 Clean API design improves frontend integration
 
