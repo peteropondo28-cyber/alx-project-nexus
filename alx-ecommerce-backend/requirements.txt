@@ -1,6 +1,12 @@
 Django>=4.2
 djangorestframework
-djangorestframework-simplejwt
+gunicorn
 psycopg2-binary
+django-environ
+django-cors-headers
+whitenoise
 drf-yasg
-python-decouple
+celery
+redis
+django-redis
+python-dotenv
