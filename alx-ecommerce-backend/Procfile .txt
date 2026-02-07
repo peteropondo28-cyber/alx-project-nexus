@@ -1,0 +1,2 @@
+web: gunicorn ecommerce.wsgi:application
+worker: celery -A ecommerce worker -l info
